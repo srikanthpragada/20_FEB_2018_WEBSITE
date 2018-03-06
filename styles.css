@@ -1,0 +1,17 @@
+﻿body {
+    font-family : Verdana; font-size : 12pt;
+}
+
+h1 {
+    color: red
+}
+
+.bluebutton {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding:5pt;
+    width : 70px;
+}
+
+
