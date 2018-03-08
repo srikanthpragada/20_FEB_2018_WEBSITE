@@ -20,18 +20,20 @@
             ErrorMessage="Email is required!"></asp:RequiredFieldValidator>
         <p></p>
         Password <br />
-        <asp:TextBox ID="txtPwd" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtPwd" TextMode="Password" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
             ControlToValidate="txtPwd"
             ErrorMessage="Password is required!"></asp:RequiredFieldValidator>
         <p></p>
         Confirm Password <br />
-        <asp:TextBox ID="txtConfirmPwd" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtConfirmPwd" TextMode="Password"  runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
             ControlToValidate="txtConfirmPwd"
+            Display="Dynamic"
             ErrorMessage="Confirm Password is required!"></asp:RequiredFieldValidator>
         <asp:CompareValidator ID="CompareValidator1" runat="server" 
-            ControlToValidate="txtConfirmPwd" ControlToCompare="txtPwd"
+            ControlToValidate="txtConfirmPwd" 
+            ControlToCompare="txtPwd"
             Operator="Equal"
             ErrorMessage="Password and Confirm Password do not match!"></asp:CompareValidator>
         <p></p>
